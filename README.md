@@ -34,3 +34,50 @@
 ---
 
 ## 🛠️ Architecture & Tech Stack
+
+┌────────────────────────────────────────────────────────┐
+│             Presentation & Interactive Layer           │
+│     React.js  │  Bootstrap  │  jQuery  │  AJAX         │
+└───────────────────────────┬────────────────────────────┘
+│ RESTful / State Payloads
+┌───────────────────────────▼────────────────────────────┐
+│              Enterprise Application Core               │
+│                   PHP (Laravel Engine)                 │
+│  ├── Multi-Tenant RBAC Module                          │
+│  ├── Audit Logging & Regulatory Compliance Engine      │
+│  └── Industry Process & Calculation Pipelines          │
+└───────────────────────────┬────────────────────────────┘
+│ Prepared Queries / Transactions
+┌───────────────────────────▼────────────────────────────┐
+│                    Relational Storage                  │
+│                     MySQL / MariaDB                    │
+└────────────────────────────────────────────────────────┘
+
+
+* **Frontend:** React.js, jQuery, AJAX for dynamic, responsive data grids and low-latency interaction; Bootstrap for clean data-dense interfaces.
+* **Backend:** PHP (Laravel) structured around modular business logic, secure service layers, and transactional database integrity.
+* **Database & Persistence:** Highly indexed MySQL architecture optimized for concurrent queries, stock balance ledgers, and audit trails.
+* **Security & Compliance:** Strict parameterization, granular permission trees (RBAC), and tenant data isolation.
+
+---
+
+## ⚙️ Core Engineering Highlights
+
+### Granular Role-Based Access Control (RBAC)
+Engineered an authorization matrix that handles layered permission hierarchies (Executives, Plant Supervisors, Storekeepers, Auditors). Enforces strict field-level data masking and tenant isolation to ensure zero cross-role operational leaks across 200+ concurrent users.
+
+### High-Throughput Inventory Ledger
+Designed an atomic transaction workflow for material allocations and stock transfers. By replacing manual batch reconciliations with asynchronous validation logic, inventory discrepancies were reduced by 60%.
+
+### Flexible Multi-Industry Customization Core
+Built on a pluggable architecture allowing custom calculation engines (e.g., ethanol density-temperature decantation charts or stone crushing grain sizes) to plug directly into the standard accounting and inventory modules without modifying base code.
+
+---
+
+## 🌐 Links & Inquiries
+* **Official Website:** [nexurastack.com](https://www.nexurastack.com)
+* **Custom Enterprise ERP Consultation:** Contact directly via [NexuraStack](https://www.nexurastack.com).
+
+---
+> **Notice on Proprietary Code:**  
+> *NexuraStack ERP codebases contain proprietary industrial algorithms and active client intellectual property. Repository code is maintained privately. High-level architecture walkthroughs and live interactive staging demos are available during technical reviews.*
